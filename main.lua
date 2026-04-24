@@ -81,12 +81,15 @@ function love.load()
     hugeFont = love.graphics.newFont('flappy.ttf', 56)
     love.graphics.setFont(flappyFont)
 
-    -- table for storing global images
+    -- table for storing global images, medals from Kenney.nl.
     gTextures = {
         ['background'] = love.graphics.newImage('background.png'),
         ['ground'] = love.graphics.newImage('ground.png'),
         ['bird'] = love.graphics.newImage('bird.png'),
-        ['pipe'] = love.graphics.newImage('pipe.png')
+        ['pipe'] = love.graphics.newImage('pipe.png'),
+        ['bronze'] = love.graphics.newImage('bronze.png'),
+        ['silver'] = love.graphics.newImage('silver.png'),
+        ['gold'] = love.graphics.newImage('gold.png'),
     }
 
     -- initialize our table of sounds
