@@ -20,7 +20,7 @@ function PipePair:init(y)
     -- y value is for the topmost pipe; gap is a vertical shift of the second lower pipe
     self.y = y
 
-    -- set the gap between the two pipes
+    -- set a random gap between the two pipes
     local GAP_HEIGHT = math.random(90, 130)
 
     -- instantiate two pipes that belong to this pair

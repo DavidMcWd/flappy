@@ -81,7 +81,7 @@ function love.load()
     hugeFont = love.graphics.newFont('flappy.ttf', 56)
     love.graphics.setFont(flappyFont)
 
-    -- table for storing global images, medals from Kenney.nl.
+    -- table for storing global images (medals are from Kenney.nl)
     gTextures = {
         ['background'] = love.graphics.newImage('background.png'),
         ['ground'] = love.graphics.newImage('ground.png'),
@@ -167,6 +167,7 @@ function love.mouse.wasPressed(button)
 end
 
 function love.update(dt)
+    
     if scrolling then
         backgroundScroll = (backgroundScroll + BACKGROUND_SCROLL_SPEED * dt) % BACKGROUND_LOOPING_POINT
         groundScroll = (groundScroll + GROUND_SCROLL_SPEED * dt) % VIRTUAL_WIDTH
