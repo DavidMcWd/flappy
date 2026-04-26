@@ -38,6 +38,7 @@ function PlayState:update(dt)
        self.pause = true
        scrolling = false
        gSounds['music']:pause()
+       gSounds['pause']:play()
     elseif self.pause == true and love.keyboard.wasPressed('p') then
         self.pause = false
         scrolling = true
